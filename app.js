@@ -35,23 +35,12 @@ connection();
 app.use("/", routes);
 
 // Start server
-app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
-});
-
-//hosted
-// app.listen(PORT, '0.0.0.0',() => {
-//     console.log(`Server is running`);
+// app.listen(PORT, () => {
+//     console.log(`Server is running on http://localhost:${PORT}`);
 // });
 
-
-// To do:
-
-
-
-//add Generate report on all table
-
-//staff_addSenior fix where contact relationship cannot be empty
-
-//pwd make email optional
+//hosted
+app.listen(PORT, '0.0.0.0',() => {
+    console.log(`Server is running`);
+});
 
